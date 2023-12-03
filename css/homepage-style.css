@@ -1,0 +1,464 @@
+
+* {
+    margin: 0px;
+    padding: 0px auto;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: #fff;
+}
+
+.menuWrap ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.menuWrap ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 57px;
+    justify-content: right;
+}
+.logoWrap img {
+    width: 72%;
+    max-width: 100%;
+}
+header {
+    padding-top: 0px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    
+}
+.menuWrap{
+    padding-top: 10px;
+}
+.leaf3 {
+    position: absolute;
+    z-index: 333;
+    transform: translate(-17rem, -13rem);
+    animation: leaf3;
+    animation-duration: 2s; 
+}
+
+.leaf1 {
+    position: absolute;
+    z-index: 333;
+     transform: translate(-8rem, 19rem);
+    /*opacity: 0; */
+    animation: leaf1;
+    animation-duration: 2s;
+}
+.leaf2 {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-40rem, 2rem);    
+    animation: leaf2;
+    animation-duration: 2s;
+}
+.leaf4 {
+    position: absolute;
+    right: 0;
+    transform: translate(-2rem, -12rem);
+    animation: leaf4;
+    animation-duration: 2s;
+}
+
+@keyframes leaf1{
+    0%{
+        transform: translate(-8rem, 25rem);
+        opacity: 1;
+      
+    }
+    100%{
+        transform: translate(-8rem, 19rem);
+        opacity: 1;
+    }
+}
+@keyframes leaf1Reverse{
+    0%{
+        transform: translate(-8rem, 25rem);
+        opacity: 1;
+      
+    }
+    100%{
+        transform: translate(-8rem, 19rem);
+        opacity: 1;
+    }
+}
+
+@keyframes leaf2{
+    0%{
+        transform: translate(-48rem, 2rem);
+        opacity: 0;
+      
+    }
+    100%{
+        transform: translate(-40rem, 2rem);
+        opacity: 1;
+    }
+}
+@keyframes leaf2Reverse{
+    0%{
+        transform: translate(-48rem, 2rem);
+        opacity: 0;
+      
+    }
+    100%{
+        transform: translate(-40rem, 2rem);
+        opacity: 1;
+    }
+}
+
+@keyframes leaf3{
+    0%{
+        transform: translate(-17rem, -22rem);
+        opacity: 0;
+      
+    }
+    100%{
+        transform: translate(-17rem, -13rem);
+        opacity: 1;
+    }
+}
+@keyframes leaf3Reverse{
+    0%{
+        transform: translate(-17rem, -22rem);
+        opacity: 0;
+      
+    }
+    100%{
+        transform: translate(-17rem, -13rem);
+        opacity: 1;
+    }
+}
+
+@keyframes leaf4{
+    0%{
+        transform:translate(4rem, -12rem);
+        opacity: 0;
+      
+    }
+    100%{
+        transform: translate(-2rem, -12rem);
+        opacity: 1;
+    }
+}
+@keyframes leaf4Reverse{
+    0%{
+        transform: translate(4rem, -12rem);
+        opacity: 0;
+      
+    }
+    100%{
+        transform:translate(-2rem, -12rem);
+        opacity: 1;
+    }
+}
+
+
+
+section.banner_section .row{position: relative;align-items: center;height: 100vh;}
+section.choices_make_diffrence .row{position: relative;align-items: center;height: 100vh;}
+section.weare_chnaging .row{position: relative;align-items: center;height: 100vh;}
+
+section.banner_section .row:after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    left: 0;    
+    position: absolute;
+    background-color: #00bdf0;
+    bottom: 0;
+    transition: all 800ms ease-out;
+    border-bottom-right-radius: 10rem;  
+    border-bottom-left-radius: 10rem;
+    transition:all 0.30s ease-out;  
+}
+section.banner_section {
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    overflow: hidden;
+    background: #fff;
+}
+
+.choices_make_diffrence {
+    height: 100vh;
+    background: none;
+    padding-top: 0px;
+    position: relative;
+    overflow: hidden;   
+    background: #fff;    
+}
+section.choices_make_diffrence .row:after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    left: 0;    
+    position: absolute;
+    background-color: #00bdf0;
+    bottom: 0;
+    transition: all 800ms ease-out;
+    border-bottom-right-radius: 10rem;  
+    border-bottom-left-radius: 10rem;
+    transition:all 0.30s ease-out;  
+}
+
+.slideText p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.slideText h1 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 43px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.img1 img {
+    width: 100%;
+    float: right;
+}
+
+.img1{
+    position: relative;
+    z-index: 22;
+    overflow: hidden;
+}
+/*===================
+Animation CSS Close
+=====================*/
+
+.women {
+    width: 31.6vw;
+    position: absolute;
+    right: 22.6vw;
+    /* background: url(images/women.png); */
+    overflow: hidden;
+    bottom: 6rem;
+    opacity: 0; 
+}
+.expand .women{
+    opacity: 1;
+}
+.women:after {
+    width: 31.6vw;
+    height: 0%;
+    position: absolute;
+    background: #00bdf0;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-name: womenlayer;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+
+@keyframes womenlayer{
+    0%{
+        height: 100%;
+        
+    }
+    100%{
+        height: 0%;
+        
+    }
+}
+.women img {
+    width: 100%;
+}
+.heading_section_one{
+    animation-name: slideText;
+    animation-duration: 3s;
+}
+.text_section_one{
+    animation-name: slideText;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+}
+
+.banner_section.third_animation .women{
+    animation: womenImg2 alternate linear;
+    /* transition-delay: 0.5s; */
+    animation-duration: 1s;
+}
+
+.choices_make_diffrence.third_animation .row:after{
+    background: #af96bc;
+}
+
+
+/* :::::::::::::::::: 
+Reverse scroll animation
+:::::::::::::::::::::::; */
+section.banner_section.third_animation .row:after{
+    background-color: #00bdf0;
+}
+.choices_make_diffrence.third_animation .women{
+    animation: womenImg2 alternate linear;
+    /* transition-delay: 0.5s; */
+    animation-duration: 1s;
+}
+
+.third_animation .heading_section_one{
+    animation-name: slideText2;
+    animation-duration: 3s;
+}
+.third_animation .text_section_one{
+    animation-name: slideText2;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+}
+.third_animation .leaf3{
+    transform: translate(-17rem, -13rem);
+    animation: leaf3Reverse;
+    animation-duration: 2s; 
+}
+.third_animation .leaf2{
+    transform: translate(-40rem, 2rem);  
+    animation: leaf2Reverse;
+    animation-duration: 2s; 
+}
+.third_animation .leaf1{
+    transform: translate(-8rem, 19rem);
+
+    animation: leaf1Reverse;
+    animation-duration: 2s; 
+}
+.third_animation .leaf4{
+    transform: translate(-2rem, -12rem);
+    animation: leaf4Reverse;
+    animation-duration: 2s; 
+}
+
+/*  */
+/* .choices_make_diffrence.third_animation .leaf1 {
+    transform: translate(2rem, 17rem);
+    animation: leaf1Reverse;
+    animation-duration: 2s;
+    width: 80px;
+}
+.choices_make_diffrence.third_animation .leaf4 {
+    transform: translate(-8rem, -12rem);
+    animation: leaf4Reverse;
+    animation-duration: 2s;
+    z-index: 33;
+    width: 50px;
+}
+.choices_make_diffrence.third_animation .leaf3 {
+    transform: translate(-10rem, -13rem);
+    animation: leaf3Reverse;
+    animation-duration: 2s;
+    width: 80px;
+}
+.choices_make_diffrence.third_animation .leaf2 {
+    transform: translate(-27rem, 13rem);
+    animation: leaf2Reverse;
+    animation-duration: 2s;
+    width: 80px;
+} */
+/*  */
+
+
+
+
+.lyr {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #00bdf0;
+    z-index: 222;
+    transition: all 300ms ease-out;
+    animation-name: lyr;
+    animation-duration: 3s;
+}
+
+@keyframes lyr{
+    0%{
+         width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+
+.leaf{
+    width: 80px;
+}
+
+
+.slideText {
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes slideText{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slideText2{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes womenImg{
+
+    0%{
+        height: 40%;
+        opacity: 0;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes womenImg2{
+
+    0%{
+        height: 40%;
+        opacity: 0;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
