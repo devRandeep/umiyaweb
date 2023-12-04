@@ -40,6 +40,7 @@
             <div class="col-md-8 p-0" style="position: relative;">
                  <div class="prodcutWrap">
                     <div class="women"><img src="images/women2.png" alt=""></div>
+                    <div class="lyr"></div>
                         <div class="img1"><img src="images/img_10.png" alt=""></div>
                 </div>
             </div>              

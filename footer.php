@@ -77,6 +77,14 @@
         $('.background').removeClass("third_animation");
          $newCurrSlide.addClass("third_animation");                   
         $previousSlide.removeClass("up-scroll").addClass("down-scroll");
+
+        setTimeout(function(){  
+        $('.choices_make_diffrence').addClass('womenActive');
+        },3000);
+
+        setTimeout(function(){      
+        $('.banner_section').removeClass('womenActiveFirstChild');
+        },3000);
         
 
     }
@@ -95,6 +103,9 @@
         }else{
             $('.background').removeClass("after_sometime");
         }
+        setTimeout(function(){      
+        $('.banner_section').addClass('womenActiveFirstChild');
+        },3000);
 
         if(currentSlideNumber == 14){
             setTimeout(function(){
@@ -104,6 +115,10 @@
         }else{
             $('.background').removeClass("after_sometime");
         }
+
+        setTimeout(function(){  
+        $('.choices_make_diffrence').removeClass('womenActive');
+        },3000);
 
         
     }

@@ -280,6 +280,32 @@ Animation CSS Close
     animation-delay: 3s;
 }
 
+.choices_make_diffrence .women:after {
+    width: 31.6vw;
+    height: 0%;
+    position: absolute;
+    background: #af96bc;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-name: womenlayer;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+.choices_make_diffrence .women img{
+    opacity: 0;
+}
+.choices_make_diffrence.womenActive .women img{
+    opacity: 1;
+}
+
+.banner_section.third_animation .women{
+    opacity: 0;
+}
+.banner_section.womenActiveFirstChild .women{
+    opacity: 1;
+}
 
 @keyframes womenlayer{
     0%{
@@ -291,6 +317,23 @@ Animation CSS Close
         
     }
 }
+.third_animation .women:after {
+    animation-name: womenlayer2;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes womenlayer2{
+    0%{
+        height: 100%;
+        
+    }
+    100%{
+        height: 0%;
+        
+    }
+}
+
 .women img {
     width: 100%;
 }
@@ -304,11 +347,7 @@ Animation CSS Close
     /* animation-delay: 1s; */
 }
 
-.banner_section.third_animation .women{
-    animation: womenImg2 alternate linear;
-    /* transition-delay: 0.5s; */
-    animation-duration: 1s;
-}
+
 
 .choices_make_diffrence.third_animation .row:after{
     background: #af96bc;
@@ -320,11 +359,6 @@ Reverse scroll animation
 :::::::::::::::::::::::; */
 section.banner_section.third_animation .row:after{
     background-color: #00bdf0;
-}
-.choices_make_diffrence.third_animation .women{
-    animation: womenImg2 alternate linear;
-    /* transition-delay: 0.5s; */
-    animation-duration: 1s;
 }
 
 .third_animation .heading_section_one{
@@ -358,6 +392,9 @@ section.banner_section.third_animation .row:after{
     animation-duration: 2s; 
 }
 
+.third_animation .women{
+    opacity: 1;
+}
 /*  */
 /* .choices_make_diffrence.third_animation .leaf1 {
     transform: translate(2rem, 17rem);
@@ -399,6 +436,24 @@ section.banner_section.third_animation .row:after{
     transition: all 300ms ease-out;
     animation-name: lyr;
     animation-duration: 3s;
+    border-bottom-right-radius: 123px;
+}
+
+.third_animation .lyr {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #00bdf0;
+    z-index: 222;
+    transition: all 300ms ease-out;
+    animation-name: lyr2;
+    animation-duration: 3s;
+    border-bottom-right-radius: 123px;
+}
+.choices_make_diffrence .lyr{
+
+    background: #af96bc;
 }
 
 @keyframes lyr{
@@ -410,6 +465,14 @@ section.banner_section.third_animation .row:after{
     }
 }
 
+@keyframes lyr2{
+    0%{
+         width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
 
 .leaf{
     width: 80px;
